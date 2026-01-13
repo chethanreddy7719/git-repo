@@ -1,1 +1,2 @@
 hi
+The git rebase command is a powerful tool used to integrate changes from one branch into another by moving or combining a sequence of commits to a new base commit. Unlike git merge, which creates a merge commit, rebase rewrites the project history to be linear and cleaner, making it easier to follow. 
