@@ -1,0 +1,4 @@
+To install Git in an Amazon Linux terminal (Amazon Linux 2 or Amazon Linux 2023), use the respective package manager commands. Amazon Linux 2 uses yum, while Amazon Linux 2023 uses dnf. 
+Installation Steps
+Connect to your Amazon Linux instance via SSH.
+Update the system packages to ensure you have the latest available packages and dependencies:
