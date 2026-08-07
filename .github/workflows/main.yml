@@ -1,14 +1,14 @@
 name: git_repo
 
-on: 
-  schedule: 
-    - cron: "*/15 * * * *"
+on:
+  schedule:
+    - cron: "*/2 * * * *"
 
 jobs:
   demo:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Print Message
-     run: echo "${{ github.actor }} schedule triggered every 15 minutes"
+      - name: Print Message
+        run: echo "${{ github.actor }} schedule triggered every 15 minutes"
     
