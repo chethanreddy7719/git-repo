@@ -1,13 +1,21 @@
 name: git_repo
 
 on:
-     workflow_dispatch: 
+     push:
+       branches:
+         - master 
 
 jobs:
   demo:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print Message
-        run: echo "${{ github.actor }} schedule triggered every 15 minutes"
+      - name: checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: runned by
+        run: echo "${{ github.actor }} The checkout is completed
+
+        
     
