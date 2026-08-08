@@ -1,0 +1,13 @@
+name: git_repo
+
+on:
+     workflow_dispatch: 
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Message
+        run: echo "${{ github.actor }} schedule triggered every 15 minutes"
+    
