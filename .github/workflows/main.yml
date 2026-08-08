@@ -14,8 +14,11 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: runned by
-        run: echo "${{ github.actor }} The checkout is completed
+      - name: run
+        run: |
+          echo "${{ github.actor }} The checkout is completed"
+           echo "Files in the repository:"
+           ls -lrt
 
         
     
